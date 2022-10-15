@@ -40,7 +40,10 @@
     }
     
  @media (max-width: 425px) {
-
+        .menu__foto{
+        max-width: 20%;
+    }
+     
     .menu__list__item__contato{
         display: flex;
         flex-direction: row-reverse;
