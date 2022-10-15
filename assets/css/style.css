@@ -1,0 +1,99 @@
+:root{
+   --color-de-fundo: #ffffff;
+   --color-de-link: #000;
+   --color-de-resaltado: #f9b204;
+   --color-sobre-mi: #EAF2FD;
+   --color-destacados: #5999bd;
+   --raleway: 'Raleway', sans-serif;
+}
+
+body{
+    font-family: var(--raleway);
+    line-height: 1.2;
+
+}
+.container{
+    background-color: var(--color-de-fundo) ;
+    margin: 0% 6% 6%;
+    padding: 0.1%;
+    box-sizing: border-box;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.experiencia__botao--repo, .experience__botao--demo{
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: 2px solid var(--color-destacados);
+    cursor: pointer;
+    color: var(--color-de-fundo);
+    transition: background-color .5s;
+    background-color: var(--color-destacados);
+}
+
+.experiencia__botao--repo, .experience__botao--demo:hover{
+    background-color: var(--color-de-fundo);
+    color: var(--color-destacados)
+}
+  
+.btn-floating {
+    display: inline-block;
+    color: var(--color-de-fundo);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    line-height: 55px;
+    padding: 0;
+    background-color: var(--color-destacados);
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    text-align: center;
+  }
+  
+.btn-floating:hover{
+    transform: scale(1.2);
+  }
+
+.fixed-action-btn {
+    position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+  }
+
+/* https://en.bem.info/methodology/quick-start/ */
+
+@media (max-width: 820px) {
+    .container{
+        background-color: var(--color-de-fundo) ;
+        margin: 0% 6% 6%;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .container{
+        background-color: var(--color-de-fundo) ;
+        margin: 5% 5% 5%;
+    }
+
+    .fixed-action-btn {
+        display: none;
+
+      }
+}

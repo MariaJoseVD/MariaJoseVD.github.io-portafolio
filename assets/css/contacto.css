@@ -1,0 +1,88 @@
+.formcontato{
+    background-color: var(--color-sobre-mi);
+    padding: 3rem 0rem 3rem 0rem;
+    padding-left: 6%;
+}
+
+.formcontato__text{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontato__input{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    min-width: 40%;
+}
+
+.formcontato__textarea{
+    min-width: 40%;
+}
+
+.Mensaje{
+    font-family: var( --raleway);
+    padding: 1rem;
+}
+
+.formcontato__botao{
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: 2px solid var(--color-destacados);
+    cursor: pointer;
+    color: var(--color-de-fundo);
+    background-color: var(--color-destacados);
+}
+
+.formcontato__botao:hover{
+    background-color: var(--color-de-fundo);
+    color: var(--color-destacados);
+}
+
+
+@media (max-width: 820px) {
+
+    .formcontato__input{
+        min-width: 50%;
+    }
+    
+    .formcontato__textarea{
+        min-width: 50%;
+    }
+
+    }
+
+ @media (max-width: 425px) {
+    .formcontato{
+        padding: 1rem 0rem 3rem 0rem;
+    }
+    .formcontato__text{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .formcontato__input{
+        min-width: 84%;
+    }
+    
+    .formcontato__textarea{
+        min-width: 50%;
+    }
+    .formcontato__botao{        
+        max-width: 170px;
+        padding: 1rem 2rem;
+        margin-top: 1rem;
+        border: 2px solid var(--color-destacados);
+        cursor: pointer;
+        color: var(--color-de-fundo);
+        background-color: var(--color-destacados);
+    }
+
+    }
