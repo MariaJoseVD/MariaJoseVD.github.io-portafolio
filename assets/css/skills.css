@@ -12,7 +12,6 @@
 .skills__line{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     Justify-content: space-between;
 }
 
